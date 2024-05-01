@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-image">
+            <img id="mainImage" src="https://www.sophisticatedprofessional.com/wp-content/uploads/2020/10/laura-chouette-6Y2XstWtDvM-unsplash-1-scaled.jpg" alt="product_image.jpg" width="350"> <!-- Increase the width of the product image here -->
+            
+            <div class="small-images">
+                <img src="https://images.gr-assets.com/authors/1604083142p8/17149237.jpg" alt="Small Image 1" width="50" class="small-image" onclick="changeImage('small_image1.jpg')">
+                <img src="https://blog.my-sugar-daddy.com/wp-content/uploads/2020/07/laura-chouette-_04XuSpLa-A-unsplash-scaled.jpg" alt="Small Image 2" width="60" class="small-image" onclick="changeImage('small_image2.jpg')">
+                <img src="https://blog.petitedressing.com/wp-content/uploads/2021/10/laura-chouette-LXHyNufB8Ds-unsplash.jpg" alt="small image 3" width="50" class="small-image" onclick="changeImage('small_image3.jpg')">
+                <img src="https://images.gr-assets.com/authors/1604083142p8/17149237.jpg" alt="Small Image 4" width="50" class="small-image" onclick="changeImage('small_image1.jpg')">
+            </div>
+        </div>
+        <div class="product-description">
+            <h6 class="cmp-name">Marmeto</h6>
+            <h2>Embrace Sideboard</h2>
+            <p><span class="org-price">$12999.00</span>  <span class="offer">35% off</span></p> 
+            <p><del class="new-price">$19999.00</del></p>       
+                <h6 class="cmp-name">Choose a color</h6>
+            <div class="color-boxes">
+                <label class="color-box-container">
+                    <input type="checkbox" class="color-box-input" value="#e2bfb7">
+                    <div class="color-box" style="background-color: #e2bfb7;"></div>
+                </label>
+                <label class="color-box-container">
+                    <input type="checkbox" class="color-box-input" value="#b7ffc4">
+                    <div class="color-box" style="background-color: #b7ffc4;"></div>
+                </label>
+                <label class="color-box-container">
+                    <input type="checkbox" class="color-box-input" value="#f0ed8d">
+                    <div class="color-box" style="background-color: #f0ed8d;"></div>
+                </label>
+                <label class="color-box-container">
+                    <input type="checkbox" class="color-box-input" value="#f379ca">
+                    <div class="color-box" style="background-color: #f379ca;"></div>
+                </label>
+            </div>
+            
+            
+            
+            <h6 class="cmp-name">Choose a size</h6>
+            <div class="size-options">
+                <label class="size-label">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Small
+                </label>
+                <label class="size-label">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Medium
+                </label>
+                <label class="size-label">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Large
+                </label>
+                <label class="size-label">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    ExtraLarge
+                </label>
+                <label class="size-label">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    XXL
+                </label>
+            </div>
+            <div class="button-container">
+    <div class="quantity-selector">
+        <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+        <span id="quantity">1</span>
+        <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+    </div>
+    <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+</div>
+
+            <p class="cmp-name">The Embrace Sideboard is a stylish wear. With a top cloth designed
+             to provide superior protection and look great, this 
+            storage solution is both functional and attractive. It fits
+             seamlessly into any home decor, with clean lines and a
+             timeless look. Crafted from premium materials for a
+            combination of style, durability, and reliability.</p>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
