@@ -1,4 +1,4 @@
-Products Details Webpage
+Products Details Webpage:
 This is a simple product details web page featuring a product image, description, color and size options, and an "Add to Cart" button. It allows users to select a color and size for the product and add it to the cart.
 
 How to use:
